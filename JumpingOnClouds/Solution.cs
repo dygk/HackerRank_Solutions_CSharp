@@ -9,6 +9,48 @@ namespace HackerRank_Solutions_CSharp.JumpingOnClouds
 {
     class Solution
     {
+        static int JumpingCloudsMinCount(string cloudsString, int n)
+        {
+            int jumpCount = 0;
+            string[] cloudsArray = cloudsString.Split(new char[0]);
+            if (n > 3)
+            {
+
+                int currentIndex = 0;
+
+                while (currentIndex < n - 1)
+                {
+                    if (currentIndex == n - 2)
+                    {
+                        currentIndex = currentIndex + 1;
+                    }
+                    else
+                    {
+                        if (int.Parse(cloudsArray[currentIndex + 2]) == 0)
+                        {
+                            currentIndex = currentIndex + 2;
+                        }
+                        else
+                        {
+                            currentIndex = currentIndex + 1;
+                        }
+                    }
+
+                    jumpCount++;
+                }
+
+
+            }
+            else
+            {
+
+                jumpCount = 1;
+            }
+
+            return jumpCount;
+
+        }
+
 
         static void Main(string[] args)
         {
@@ -18,8 +60,16 @@ namespace HackerRank_Solutions_CSharp.JumpingOnClouds
 
             int n = Convert.ToInt32(Console.ReadLine().Trim());
 
-            string cloudsArray = Console.ReadLine();
+            string cloudsString = Console.ReadLine();
 
+
+
+            int result = JumpingCloudsMinCount(cloudsString, n);
+
+            textWriter.WriteLine(result);
+
+            textWriter.Flush();
+            textWriter.Close();
 
         }
     }
