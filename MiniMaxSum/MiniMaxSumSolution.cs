@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HackerRank_Solutions_CSharp.MiniMaxSum
 {
-    class Solution
+    class MiniMaxSumSolution
     {
 
         // Complete the miniMaxSum function below.
