@@ -34,19 +34,19 @@ public class Solution
 
         return result;
     }
-    static void Main(string[] args)
-    {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+    //static void Main(string[] args)
+    //{
+    //    TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
-        string s = Console.ReadLine();
+    //    string s = Console.ReadLine();
 
-        long n = Convert.ToInt64(Console.ReadLine());
+    //    long n = Convert.ToInt64(Console.ReadLine());
 
-        long result = repeatedString(s, n);
+    //    long result = repeatedString(s, n);
 
-        textWriter.WriteLine(result);
+    //    textWriter.WriteLine(result);
 
-        textWriter.Flush();
-        textWriter.Close();
-    }
+    //    textWriter.Flush();
+    //    textWriter.Close();
+    //}
 }

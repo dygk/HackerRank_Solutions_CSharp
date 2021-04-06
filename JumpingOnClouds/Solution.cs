@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace HackerRank_Solutions_CSharp.JumpingOnClouds
 {
-    class Solution
+   public  static class Solution
     {
-        static int JumpingCloudsMinCount(string cloudsString, int n)
+      public  static int JumpingCloudsMinCount(string cloudsString, int n)
         {
             int jumpCount = 0;
             string[] cloudsArray = cloudsString.Split(new char[0]);
@@ -52,25 +52,25 @@ namespace HackerRank_Solutions_CSharp.JumpingOnClouds
         }
 
 
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
 
 
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        //    TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
-            int n = Convert.ToInt32(Console.ReadLine().Trim());
+        //    int n = Convert.ToInt32(Console.ReadLine().Trim());
 
-            string cloudsString = Console.ReadLine();
+        //    string cloudsString = Console.ReadLine();
 
 
 
-            int result = JumpingCloudsMinCount(cloudsString, n);
+        //    int result = JumpingCloudsMinCount(cloudsString, n);
 
-            textWriter.WriteLine(result);
+        //    textWriter.WriteLine(result);
 
-            textWriter.Flush();
-            textWriter.Close();
+        //    textWriter.Flush();
+        //    textWriter.Close();
 
-        }
+        //}
     }
 }

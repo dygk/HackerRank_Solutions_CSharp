@@ -26,12 +26,12 @@ namespace HackerRank_Solutions_CSharp.MiniMaxSum
             Console.WriteLine(minSum + "  " + maxSum);
         }
 
-        static void Main(string[] args)
-        {
-            int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp))
-            ;
-            miniMaxSum(arr);
-        }
+        //static void Main(string[] args)
+        //{
+        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp))
+        //    ;
+        //    miniMaxSum(arr);
+        //}
 
 
 

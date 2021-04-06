@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HackerRank_Solutions_CSharp._2DArrayDS
 {
-    class SolutionArray
+  public  class SolutionArray
     {
         static int hourglassSum(int[][] arr)
         {
