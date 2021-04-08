@@ -9,7 +9,7 @@ namespace HackerRank_Solutions_CSharp._2DArrayDS
 {
   public  class SolutionArray
     {
-        static int hourglassSum(int[][] arr)
+      public  static int hourglassSum(int[][] arr)
         {
 
             int? result = null;
@@ -59,12 +59,9 @@ namespace HackerRank_Solutions_CSharp._2DArrayDS
 
 
             int result = hourglassSum(arr);
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
-            textWriter.WriteLine(result);
-
-            textWriter.Flush();
-            textWriter.Close();
+            Console.WriteLine(result);
+            
         }
     }
 }
