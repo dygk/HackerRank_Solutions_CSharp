@@ -24,10 +24,10 @@ namespace HackerRank_Solutions_CSharp.DiagonalTraverse
 
         private  static  void GoUp(int[][] matrix, int i, int j)
         {
-            int m = matrix.Length;
-            int n= matrix.GetLength(0);
+            int m = matrix[0].Length;
+            int n= matrix.Length;
 
-            if (m - 1 == i && n - 1 == j)
+            if (n- 1 == i && m - 1 == j)
             {
                 resultArray.Add(matrix[i][j]); return;
             }
@@ -53,10 +53,10 @@ namespace HackerRank_Solutions_CSharp.DiagonalTraverse
 
         private static  void GoDown(int[][] matrix, int i, int j)
         {
-            int m = matrix.Length;
-            int n = matrix.GetLength(0);
+            int m = matrix[0].Length;
+            int n = matrix.Length;
 
-            if (m - 1 == i && n - 1 == j)
+            if (n - 1 == i && m - 1 == j)
             {
                 resultArray.Add(matrix[i][j]); return;
             }
@@ -86,9 +86,9 @@ namespace HackerRank_Solutions_CSharp.DiagonalTraverse
         {
 
 
-            int[][] arr = new int[3][] {new int[3] { 1, 2, 3},
-                                        new int[3] { 4, 5, 6},
-                                        new int[3] { 7, 8, 9},
+            int[][] arr = new int[3][] {new int[4] { 1, 2, 3,4},
+                                        new int[4] { 4, 5, 6,5},
+                                        new int[4] { 7, 8, 9,6},
                                        };
         
 
