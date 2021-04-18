@@ -13,14 +13,17 @@ namespace HackerRank_Solutions_CSharp.NewYearChaos
             int count = 0;
             bool isChoatic = false;
 
-            for (int i = 0; i < q.Length; i++)
+            for (int i = q.Length-1; i >=0; i--)
             {
-                int bribeCount = q[i] - i + 1;
-                if (bribeCount > 0)
-                    count += bribeCount;
 
-                if (bribeCount > 2)
-                    isChoatic = true;
+                if (q[i] - i - 1 > 2)
+                {
+                    isChoatic = true; break;
+                }
+
+                for (int j = Math.Max(0,q[i]-2); j < i; j++)
+                    if (q[j] > q[i])
+                        count++;
             }
 
             Console.WriteLine(isChoatic ? "Too Chaotic" : count);
